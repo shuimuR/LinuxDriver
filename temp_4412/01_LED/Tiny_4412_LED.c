@@ -31,6 +31,7 @@ static int LEDs_Open(struct inode *inode, struct file *filp)
 	{
 		 s3c_gpio_cfgpin(led_gpios[i], S3C_GPIO_OUTPUT);	
 	}
+	printk("LEDs_Open\n");
 	return 0;
 }
 
@@ -39,11 +40,18 @@ static long LEDs_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
 	//cmd: 1--on  0--off
 	//arg: 0~3
 	if(cmd !=0 && cmd != 1)
+	{
+		printk("args is not 0 or 1\n");
 		return -EINVAL;
-	
-	if(arg >= 4)
+	}	
+	if(arg > 4)
+	{
+		printk("arg > 4\n");
 		return -EINVAL;
+	}
 	gpio_set_value(led_gpios[arg], !cmd);
+
+	printk("LED set value over\n");
 }
 
 static struct file_operations LEDs_Ops = 
@@ -60,7 +68,10 @@ int LEDs_Init(void)
 	major = register_chrdev(0, "LEDs", &LEDs_Ops);
 	LEDsDrvClass = class_create(THIS_MODULE, "LEDs");
 	LEDsClassDev = device_create(LEDsDrvClass, NULL, MKDEV(major, 0), NULL, "LEDs");
+	
+	printk("LED init over\n");
 	return 0;	
+
 }
 
 void LEDs_Exit(void)
@@ -68,6 +79,7 @@ void LEDs_Exit(void)
 	device_destroy(LEDsDrvClass, MKDEV(major, 0));
 	class_destroy(LEDsClassDev);
 	unregister_chrdev(major, "LEDs");
+	printk("LED exit over\n");
 }
 
 module_init(LEDs_Init);
