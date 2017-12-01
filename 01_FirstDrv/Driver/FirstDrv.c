@@ -35,12 +35,12 @@ static struct file_operations FirstStructOps =
 	.write = FirstWrite,	
 };
 
-#define major 111
+int major; 
 
 int FirstDrvInit()
 {
 	printk("FirstDrvInit\n");
-	register_chrdev(major, "FirstDrv", &FirstStructOps);
+	major = register_chrdev(0, "FirstDrv", &FirstStructOps);
 	return 0;	
 }
 
