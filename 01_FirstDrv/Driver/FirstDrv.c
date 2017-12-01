@@ -16,6 +16,9 @@
 #include <asm/arch/regs-gpio.h>
 #include <asm/hardware.h>
 
+static struct class *FirstDrvClass;
+static struct class_device *FirstDrvClassDevs;
+
 static int FirstOpen(struct inode *inode, struct file *file)
 {
 	printk("FirstOpen\n");
@@ -41,6 +44,15 @@ int FirstDrvInit()
 {
 	printk("FirstDrvInit\n");
 	major = register_chrdev(0, "FirstDrv", &FirstStructOps);
+ 	
+	FirstDrvClass = class_create(THIS_MODULE, "FirstDrv");
+	if(IS_ERR(FirstDrvClass))
+		return PTR_ERR(FirstDrvClass);
+	
+	FirstDrvClassDevs = class_device_create(FirstDrvClass, NULL, MKDEV(major, 0), NULL, "xyz");			//创建类FirstDrv下的/dev/xyz节点
+	if(unlikely(IS_ERR(FirstDrvClassDevs)))
+		return PTR_ERR(FirstDrvClassDevs);
+
 	return 0;	
 }
 
@@ -48,7 +60,11 @@ void FirstExit()
 {
 	printk("FirstExit\n");
 	unregister_chrdev(major, "FirstDrv");	
+	class_device_unregister(FirstDrvClassDevs);
+	class_destroy(FirstDrvClass);
 }
 
 module_init(FirstDrvInit);
 module_exit(FirstExit);
+
+MODULE_LICENSE("GPL");

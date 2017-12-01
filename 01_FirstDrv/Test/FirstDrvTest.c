@@ -7,7 +7,7 @@ int main(int argc, char **argv)
 {
 	int fd;
 	int val = 1;
-	fd = open("/dev/xxx", O_RDWR);
+	fd = open("/dev/xyz", O_RDWR);
 	if(fd < 0)
 		printf("Can't open!\n");
 		
