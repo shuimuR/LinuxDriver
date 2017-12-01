@@ -270,6 +270,76 @@ deps_/home/shuimu/more/LinuxDriver/01_FirstDrv/Driver/FirstDrv.o := \
   include/asm/delay.h \
   include/asm/param.h \
     $(wildcard include/config/hz.h) \
+  include/linux/uaccess.h \
+  include/asm/uaccess.h \
+  include/linux/sched.h \
+    $(wildcard include/config/no/hz.h) \
+    $(wildcard include/config/detect/softlockup.h) \
+    $(wildcard include/config/split/ptlock/cpus.h) \
+    $(wildcard include/config/keys.h) \
+    $(wildcard include/config/bsd/process/acct.h) \
+    $(wildcard include/config/taskstats.h) \
+    $(wildcard include/config/inotify/user.h) \
+    $(wildcard include/config/schedstats.h) \
+    $(wildcard include/config/task/delay/acct.h) \
+    $(wildcard include/config/blk/dev/io/trace.h) \
+    $(wildcard include/config/cc/stackprotector.h) \
+    $(wildcard include/config/sysvipc.h) \
+    $(wildcard include/config/rt/mutexes.h) \
+    $(wildcard include/config/task/xacct.h) \
+    $(wildcard include/config/cpusets.h) \
+    $(wildcard include/config/compat.h) \
+    $(wildcard include/config/fault/injection.h) \
+  include/linux/capability.h \
+  include/linux/timex.h \
+    $(wildcard include/config/time/interpolation.h) \
+  include/asm/timex.h \
+  include/asm/arch/timex.h \
+  include/linux/jiffies.h \
+  include/linux/calc64.h \
+  include/asm/div64.h \
+  include/linux/rbtree.h \
+  include/asm/mmu.h \
+    $(wildcard include/config/cpu/has/asid.h) \
+  include/asm/cputime.h \
+  include/asm-generic/cputime.h \
+  include/linux/sem.h \
+  include/linux/ipc.h \
+    $(wildcard include/config/ipc/ns.h) \
+  include/asm/ipcbuf.h \
+  include/asm/sembuf.h \
+  include/linux/signal.h \
+  include/asm/signal.h \
+  include/asm-generic/signal.h \
+  include/asm/sigcontext.h \
+  include/asm/siginfo.h \
+  include/asm-generic/siginfo.h \
+  include/linux/securebits.h \
+  include/linux/fs_struct.h \
+  include/linux/seccomp.h \
+    $(wildcard include/config/seccomp.h) \
+  include/linux/futex.h \
+    $(wildcard include/config/futex.h) \
+  include/linux/rtmutex.h \
+    $(wildcard include/config/debug/rt/mutexes.h) \
+  include/linux/plist.h \
+    $(wildcard include/config/debug/pi/list.h) \
+  include/linux/param.h \
+  include/linux/resource.h \
+  include/asm/resource.h \
+  include/asm-generic/resource.h \
+  include/linux/timer.h \
+    $(wildcard include/config/timer/stats.h) \
+  include/linux/ktime.h \
+    $(wildcard include/config/ktime/scalar.h) \
+  include/linux/hrtimer.h \
+    $(wildcard include/config/high/res/timers.h) \
+  include/linux/task_io_accounting.h \
+    $(wildcard include/config/task/io/accounting.h) \
+  include/linux/aio.h \
+  include/linux/workqueue.h \
+  include/linux/aio_abi.h \
+  include/linux/uio.h \
   include/asm/io.h \
   include/asm/arch/io.h \
   include/asm/hardware.h \

@@ -10,6 +10,8 @@
 #include <linux/ioctl.h>
 #include <linux/cdev.h>
 #include <linux/delay.h>
+#include <linux/uaccess.h>
+
 
 #include <asm/io.h>
 #include <asm/irq.h>
@@ -19,15 +21,33 @@
 static struct class *FirstDrvClass;
 static struct class_device *FirstDrvClassDevs;
 
+volatile unsigned long *gpfcon = NULL;
+volatile unsigned long *gpfdat = NULL;
+
 static int FirstOpen(struct inode *inode, struct file *file)
 {
 	printk("FirstOpen\n");
+	*gpfcon &= ~((0x03 << (4*2)) | (0x03 << (5 * 2)) | (0x03 << (6 * 2)));
+	*gpfcon |= ((0x01 << (4 * 2)) | (0x01 << (5*2)) | 0x01 << (6 * 2));
 	return 0;	
 }
 
 static ssize_t FirstWrite(struct file *file, const char __user *buf, size_t count, loff_t * ppos)
 {
+	int val = 0;
+
+	copy_from_user(&val, buf, count);
+
+	if(val == 1)
+	{
+		*gpfdat &= ~((1 << 4) | (1 << 5) | (1 << 6));
+	}
+	else
+	{
+		*gpfdat |= (1 << 4) | (1 << 5) | (1 << 6);
+	}
 	printk("FirstWrite\n");
+
 	return 0;	
 }
 
@@ -53,6 +73,8 @@ int FirstDrvInit()
 	if(unlikely(IS_ERR(FirstDrvClassDevs)))
 		return PTR_ERR(FirstDrvClassDevs);
 
+	gpfcon = (volatile unsigned long *)ioremap(0x56000050, 16);
+	gpfdat = gpfcon + 1;			//driver use map addr
 	return 0;	
 }
 
@@ -62,6 +84,8 @@ void FirstExit()
 	unregister_chrdev(major, "FirstDrv");	
 	class_device_unregister(FirstDrvClassDevs);
 	class_destroy(FirstDrvClass);
+
+	iounmap(gpfcon);
 }
 
 module_init(FirstDrvInit);

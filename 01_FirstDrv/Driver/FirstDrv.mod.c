@@ -17,5 +17,5 @@ __attribute__((section(".gnu.linkonce.this_module"))) = {
 static const char __module_depends[]
 __attribute_used__
 __attribute__((section(".modinfo"))) =
-"depends=built-in,built-in,built-in";
+"depends=built-in,built-in,built-in,built-in,built-in";
 
