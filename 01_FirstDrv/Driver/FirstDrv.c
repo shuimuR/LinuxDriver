@@ -14,7 +14,7 @@
 #include <asm/io.h>
 #include <asm/irq.h>
 #include <asm/arch/regs-gpio.h>
-#include <asm/hardware>
+#include <asm/hardware.h>
 
 static int FirstOpen(struct inode *inode, struct file *file)
 {
@@ -28,8 +28,8 @@ static ssize_t FirstWrite(struct file *file, const char __user *buf, size_t coun
 	return 0;	
 }
 
-static struct file_operations FirstStructOps
-{
+static struct file_operations FirstStructOps = 
+{	
 	.owner = THIS_MODULE,
 	.open = FirstOpen,
 	.write = FirstWrite,	

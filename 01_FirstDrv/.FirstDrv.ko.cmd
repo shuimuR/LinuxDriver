@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/01_FirstDrv/FirstDrv.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/01_FirstDrv/FirstDrv.ko /home/shuimu/more/LinuxDriver/01_FirstDrv/FirstDrv.o /home/shuimu/more/LinuxDriver/01_FirstDrv/FirstDrv.mod.o
