@@ -48,16 +48,16 @@ static ssize_t ScanKeyRead(struct file *file, char __user *buf, size_t size, lof
 	}
 
 	regval = *gpfdat;
-	KeyVal[0] = (regval & (1 << 0) ? 1 : 0);
-	KeyVal[1] = (regval & (1 << 2) ? 1 : 0);
+	KeyVal[0] = (regval & (1 << 0) ? 0 : 1);
+	KeyVal[1] = (regval & (1 << 2) ? 0 : 1);
 
 	regval = *gpgdat;
-	KeyVal[2] = (regval & (1 << 3) ? 1 : 0);
-	KeyVal[3] = (regval & (1 << 11) ? 1 : 0);
+	KeyVal[2] = (regval & (1 << 3) ? 0 : 1);
+	KeyVal[3] = (regval & (1 << 11) ? 0 : 1);
 	
 	copy_to_user(buf, KeyVal, sizeof(KeyVal));
 
-	printk("KeyScan read");
+	printk("KeyScan read\n");
 
 	return 0;	
 }

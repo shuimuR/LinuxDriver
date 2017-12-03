@@ -1,4 +1,4 @@
-all:FirstDrvTest
+all:ScanKeyTest
 
-FirstDrvTest:FirstDrvTest.c
-	arm-linux-gcc -o FirstDrvTest FirstDrvTest.c
+ScanKeyTest:ScanKeyTest.c
+	arm-linux-gcc -o ScanKeyTest ScanKeyTest.c
