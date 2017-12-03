@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/03_KeyIntr/Driver/KeyIntr.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/03_KeyIntr/Driver/KeyIntr.ko /home/shuimu/more/LinuxDriver/03_KeyIntr/Driver/KeyIntr.o /home/shuimu/more/LinuxDriver/03_KeyIntr/Driver/KeyIntr.mod.o
