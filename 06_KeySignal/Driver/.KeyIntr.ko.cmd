@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/06_KeySignal/Driver/KeyIntr.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/06_KeySignal/Driver/KeyIntr.ko /home/shuimu/more/LinuxDriver/06_KeySignal/Driver/KeyIntr.o /home/shuimu/more/LinuxDriver/06_KeySignal/Driver/KeyIntr.mod.o

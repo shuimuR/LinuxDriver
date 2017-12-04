@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/02_ScanKey/Driver/ScanKey.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/02_ScanKey/Driver/ScanKey.ko /home/shuimu/more/LinuxDriver/02_ScanKey/Driver/ScanKey.o /home/shuimu/more/LinuxDriver/02_ScanKey/Driver/ScanKey.mod.o

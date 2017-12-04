@@ -1,0 +1,28 @@
+1. 应用程序通过signal(SIGIO, KeyValueGetFun)注册信号量和信号函数
+
+2. 驱动程序中使用kill_fasync(&button_async, SIGIO, POLL_IN)来发送信号量
+
+3. 应用程序在打开设备节点后得到文件描述符fd，
+	使用以下函数告诉驱动函数将信号量发送给它
+	int OFlags;
+	fcntl(fd, F_SETOWN, getpid());
+	OFlags = fcntl(fd, F_GETFL);
+	fcntl(fd, F_SETFL, OFlags | FASYNC);
+在fcntl执行时，会调用驱动函数中的fasync，进而调用ButtonSync
+
+4. 在驱动程序中需要使用以下方法实现信号量和具体App之间的对应
+static int ButtonSync(int fd, struct file *filp, int on)
+{
+	printk("Driver: run ButtonSync to register the fdsync\n");
+	return fasync_helper(fd, filp, on, &button_async);	
+}
+
+static struct file_operations ScanKeyOperations = 
+{
+	.owner = THIS_MODULE,
+	.open = KeyIntrOpen,
+	.read = KeyIntrRead,	
+	.release = KeyIntrClose,
+	.poll = KeyIntrPoll,
+	.fasync = ButtonSync,
+};

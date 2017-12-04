@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_SemMutex/KeyIntr.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_SemMutex/KeyIntr.ko /home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_SemMutex/KeyIntr.o /home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_SemMutex/KeyIntr.mod.o
