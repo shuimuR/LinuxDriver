@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/LED_Dev.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/LED_Dev.ko /home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/LED_Dev.o /home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/LED_Dev.mod.o

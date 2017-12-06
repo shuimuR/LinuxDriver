@@ -1,0 +1,166 @@
+通过这种方式可以将底层的硬件配置和比较上层的东西进行分离，如果要更改硬件，只需要更改device下面的resource即可
+
+1. 在dev中构造如下
+    static struct resource led_resource[] =
+            {
+                    [0] = {
+                            .start = 0x56000050,
+                            .end = 0x56000050 + 8 - 1,
+                            .flags = IORESOURCE_MEM,
+                    },
+                    [1] = {
+                            .start = 4,
+                            .end = 4,
+                            .flags = IORESOURCE_IRQ,
+                    }
+            };
+
+    //need the release, or we can't run the rmmod
+    static void LED_Release(struct device * dev)
+    {
+
+    }
+
+    static struct platform_device led_dev =
+            {
+                    .name = "MyLED",
+                    .id = -1,
+                    .num_resources = ARRAY_SIZE(led_resource),
+                    .resource = led_resource,
+                    .dev = {
+                            .release = LED_Release,
+                    },
+            };
+
+
+    static int LED_DevInit()
+    {
+        platform_device_register(&led_dev);
+        return 0;
+    }
+
+    static void LED_DevExit()
+    {
+        platform_device_unregister(&led_dev);
+    }
+
+    module_init(LED_DevInit);
+
+    module_exit(LED_DevExit);
+
+    MODULE_LICENSE("GPL");
+
+    Pay Attention: the name must be same with driver name, because the middle find the it by name then connect it with driver
+
+2.  构造如下结构体，实现与底层硬件分离
+    static struct platform_driver LED_Drv =
+           {
+                   .probe = LED_Probe,
+                   .remove = LED_Remove,
+                   .driver = {
+                           .name = "MyLED",
+                   }
+           };
+
+
+   static int LED_DrvInit()
+   {
+       platform_driver_register(&LED_Drv);
+
+       return 0;
+   }
+
+   static void LED_DrvExit()
+   {
+       platform_driver_unregister(&LED_Drv);
+   }
+
+   module_init(LED_DrvInit);
+
+   module_exit(LED_DrvExit);
+
+   MODULE_LICENSE("GPL");
+
+   之后完善具体的函数
+   在driver找到具体的device对应后，会自动调用该结构体下的probe函数，实现对应的方式是查找device和driver的name，如果相同，则对应起来
+
+    static struct class *LEDDrvClass;
+    static struct class_device *LEDDrvClassDevs;
+
+    static int LED_Probe(struct platform_device *dev)
+    {
+        struct resource *res;
+        //根据platform_device资源进行ioremap
+        res = platform_get_resource(dev, IORESOURCE_MEM, 0);
+        gpio_con = ioremap(res->start, res->end - res->start + 1);
+        gpio_dat = gpio_con + 1;
+
+        res = platform_get_resource(dev, IORESOURCE_IRQ, 0);
+        pin = res->start;
+        //注册字符设备驱动程序
+
+        printk("LED probe\n");
+
+        major = register_chrdev(0, "MyLED", &led_fops);
+
+        LEDDrvClass = class_create(THIS_MODULE, "MyLED");
+        if(IS_ERR(LEDDrvClass))
+            return PTR_ERR(LEDDrvClass);
+
+        LEDDrvClassDevs = class_device_create(LEDDrvClass, NULL, MKDEV(major, 0), NULL, "LED");			//创建类FirstDrv下的/dev/xyz节点
+        if(unlikely(IS_ERR(LEDDrvClassDevs)))
+            return PTR_ERR(LEDDrvClassDevs);
+
+        return 0;
+    }
+
+    static void LED_Remove()
+    {
+        printk("LED remove\n");
+        unregister_chrdev(major, "MyLED");
+        class_device_unregister(LEDDrvClassDevs);
+        class_destroy(LEDDrvClass);
+
+        iounmap(gpio_con);
+    }
+
+    需要实现上面的功能，则需要构造其file_operations结构体
+    static int major;
+    //IO remap
+    static volatile unsigned long *gpio_con;
+    static volatile unsigned long *gpio_dat;
+    static int pin;
+
+    static int LED_Open(struct inode *inode, struct file *file)
+    {
+        printk("FirstOpen\n");
+        *gpio_con &= ~((0x03 << (pin*2)));
+        *gpio_con |= (0x01 << (pin * 2));
+        return 0;
+    }
+
+    static ssize_t LED_Write(struct file *file, const char __user *buf, size_t count, loff_t * ppos)
+    {
+        int val = 0;
+
+        copy_from_user(&val, buf, count);
+
+        if(val == 1)
+        {
+            *gpio_dat &= ~(1 << pin);
+        }
+        else
+        {
+            *gpio_dat |= (1 << pin);
+        }
+        printk("LED write %d\n", val);
+
+        return 0;
+    }
+
+    static struct file_operations led_fops =
+            {
+                    .owner = THIS_MODULE,
+                    .open  = LED_Open,
+                    .write = LED_Write,
+            };
