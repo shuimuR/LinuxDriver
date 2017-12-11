@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LinuxDriver"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/shuimu/more/LinuxDriver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/shuimu/more/LinuxDriver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/shuimu/more/LinuxDriver/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinuxDriver">
+				<Option output="/home/shuimu/more/LinuxDriver/cmake-build-debug/LinuxDriver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shuimu/more/LinuxDriver/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinuxDriver"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LinuxDriver/fast">
+				<Option output="/home/shuimu/more/LinuxDriver/cmake-build-debug/LinuxDriver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shuimu/more/LinuxDriver/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 LinuxDriver/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/shuimu/more/LinuxDriver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/shuimu/more/LinuxDriver/01_FirstDrv/Driver/FirstDrv.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/01_FirstDrv/Driver/FirstDrv.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/01_FirstDrv/Test/FirstDrvTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/02_ScanKey/Driver/ScanKey.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/02_ScanKey/Driver/ScanKey.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/02_ScanKey/Test/ScanKeyTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/03_KeyIntr/Driver/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/03_KeyIntr/Driver/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/03_KeyIntr/Test/KeyIntrTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/04_KeyPoll/Driver/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/04_KeyPoll/Driver/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/04_KeyPoll/Test/KeyIntrTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/05_Signal/Signal1.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/06_KeySignal/Driver/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/06_KeySignal/Driver/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/06_KeySignal/Test/KeyIntrTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/DriverBlock/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/DriverBlock/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_Atom/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_Atom/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_SemMutex/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/Driver_SemMutex/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/Test/KeyIntrTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/07_KeyForOne/Test_Block/KeyIntrTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/08_Improve/Driver/KeyIntr.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/08_Improve/Driver/KeyIntr.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/08_Improve/Test/KeyIntrTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/09_ButtonInput/ButtonInput.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/09_ButtonInput/ButtonInput.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/Driver/LED_Dev.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/Driver/LED_Dev.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/Driver/LED_Drv.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/Driver/LED_Drv.mod.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/10_LED_BUS_DEV/Test/LEDTest.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/11_LCD/Driver/LCD_Drv.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/temp_4412/01_LED/Tiny_4412_LED.c">
+			<Option target="LinuxDriver"/>
+		</Unit>
+		<Unit filename="/home/shuimu/more/LinuxDriver/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

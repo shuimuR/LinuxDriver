@@ -1,0 +1,26 @@
+1. 内核中make menuconfig去掉原先的LCD驱动程序
+    device drivers-----Graphics support-------S3C2410 LCD framebuffer support------> M
+
+2. make uImage
+    make modules
+
+3. 使用新的内核启动
+
+4. 编译新的LCD   driver
+
+5. cp drivers/video/cfb*.ko /LCD_Dir
+
+6. insmod cfbcopyarea.ko
+    insmod cfbfillrect.ko
+    insmod cfbimgblt.ko
+
+7. insmod LCD_Drv.ko
+
+8. echo hello > /dev/tty1
+    cat lcd.ko > /dev/fb0
+
+9. vi /etc/inittab
+
+    加入一行   tty1:askfirst:-/bin/sh
+
+10.
