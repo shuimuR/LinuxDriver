@@ -1,0 +1,72 @@
+font_8x16.o font_8x16.o: font_8x16.c font.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/linux/types.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/types.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/features.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/cdefs.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/gnu/stubs.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/types.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/wordsize.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/include/stddef.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/typesizes.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/time.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/endian.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/endian.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/select.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/select.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/sigset.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/time.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/sysmacros.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/pthreadtypes.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/sched.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/linux/posix_types.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/linux/stddef.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/asm/posix_types.h \
+  /opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/asm/types.h
+
+font.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/linux/types.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/types.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/features.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/cdefs.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/gnu/stubs.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/types.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/wordsize.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/include/stddef.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/typesizes.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/time.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/endian.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/endian.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/select.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/select.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/sigset.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/time.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/sys/sysmacros.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/pthreadtypes.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/bits/sched.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/linux/posix_types.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/linux/stddef.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/asm/posix_types.h:
+
+/opt/gcc-3.4.5-glibc-2.3.6/bin/../lib/gcc/arm-linux/3.4.5/../../../../arm-linux/sys-include/asm/types.h:

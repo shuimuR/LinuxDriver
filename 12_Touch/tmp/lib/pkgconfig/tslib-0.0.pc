@@ -1,0 +1,10 @@
+prefix=/home/shuimu/more/LinuxDriver/12_Touch/tslib/tmp
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: tslib
+Description: Touchscreen Access Library
+Version: 0.0.2
+Libs: -L${libdir} -lts
+Cflags: -I${includedir}

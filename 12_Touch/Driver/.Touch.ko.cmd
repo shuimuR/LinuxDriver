@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/12_Touch/Driver/Touch.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/12_Touch/Driver/Touch.ko /home/shuimu/more/LinuxDriver/12_Touch/Driver/Touch.o /home/shuimu/more/LinuxDriver/12_Touch/Driver/Touch.mod.o

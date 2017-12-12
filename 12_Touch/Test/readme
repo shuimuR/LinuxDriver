@@ -1,0 +1,33 @@
+
+*******************************************************
+测试1————4
+1. make menuconfig
+    去掉内核中原来的Touch驱动
+    device drivers
+            ---->input device
+                    ----->Generic input layer
+                    ----->Touch layer
+2. make uImage
+
+3. 使用新内核启动
+
+4. insmod Touch.ko
+
+
+
+*******************************************************
+测试5
+
+1. ls /dev/event*
+2. insmod Touch.ko
+3. ls /dev/event*
+4. hexdump /dev/event0
+
+index    second     ms      type code  value
+0000750 2ada 0000 7c6a 0001 0003 0018 0001 0000
+0000760 2ada 0000 7c6d 0001 0001 014a 0001 0000
+0000770 2ada 0000 7c70 0001 0000 0000 0000 0000
+0000780 2ada 0000 91c6 0001 0003 0018 0000 0000
+0000790 2ada 0000 91db 0001 0001 014a 0000 0000
+00007a0 2ada 0000 91dd 0001 0000 0000 0000 0000
+
