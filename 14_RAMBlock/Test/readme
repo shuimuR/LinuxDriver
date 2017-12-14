@@ -1,0 +1,21 @@
+/***************************************************
+从第三个开始
+***************************************************/
+
+1. insmod
+
+2. mkdosfs /dev/ramblock        //格式化
+
+3. mount /dev/ramblock /tmp
+
+4. cd /tmp
+    vi Hello.txt
+    读写文件或拷贝文件
+
+5. umount /tmp
+
+6. cat /dev/ramblock > /mnt/ramblock.bin
+
+7. 在PC 上查看ramblock.bin
+    PC: sudo mount -o loop ramblock.bin /mnt
+
