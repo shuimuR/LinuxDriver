@@ -24,21 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Touch.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/12_Touch/Driver/Touch.c">
+      <file leaf-file-name="USB_Mouse.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/13_USB_DEV/Driver/USB_Mouse.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="160" column="17" lean-forward="true" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+            <state relative-caret-position="-288">
+              <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="readme" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/12_Touch/Test/readme">
+        <entry file="file://$PROJECT_DIR$/13_USB_DEV/Test/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="738">
+              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,6 +50,7 @@
     <findStrings>
       <find>map</find>
       <find>ex</find>
+      <find>usb_alloc_coherent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,6 +64,8 @@
         <option value="$PROJECT_DIR$/11_LCD/Driver/LCD_Drv.c" />
         <option value="$PROJECT_DIR$/12_Touch/Driver/Touch.c" />
         <option value="$PROJECT_DIR$/12_Touch/Test/readme" />
+        <option value="$PROJECT_DIR$/13_USB_DEV/Driver/USB_Mouse.c" />
+        <option value="$PROJECT_DIR$/13_USB_DEV/Test/readme" />
       </list>
     </option>
   </component>
@@ -72,11 +75,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="927" />
-    <option name="y" value="24" />
-    <option name="width" value="1144" />
-    <option name="height" value="1020" />
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="657" />
+    <option name="y" value="33" />
+    <option name="width" value="1143" />
+    <option name="height" value="1076" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -122,18 +126,18 @@
             <path>
               <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
-              <item name="12_Touch" type="462c0819:PsiDirectoryNode" />
+              <item name="13_USB_DEV" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
-              <item name="12_Touch" type="462c0819:PsiDirectoryNode" />
+              <item name="13_USB_DEV" type="462c0819:PsiDirectoryNode" />
               <item name="Driver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
-              <item name="12_Touch" type="462c0819:PsiDirectoryNode" />
+              <item name="13_USB_DEV" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -183,18 +187,19 @@
       <option name="presentableId" value="Default" />
       <updated>1512952658236</updated>
       <workItem from="1512952659860" duration="14550000" />
-      <workItem from="1513039632263" duration="9086000" />
+      <workItem from="1513039632263" duration="10285000" />
+      <workItem from="1513144478404" duration="7879000" />
+      <workItem from="1513211733625" duration="1847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23636000" />
+    <option name="totallyTimeSpent" value="34561000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="927" y="24" width="1144" height="1020" extended-state="0" />
-    <editor active="true" />
+    <frame x="657" y="33" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1541779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -225,11 +230,40 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/12_Touch/Driver/Touch.c">
+    <entry file="file://$PROJECT_DIR$/13_USB_DEV/Driver/USB_Mouse.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_USB_DEV/Test/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_Touch/Driver/Touch.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_Touch/Test/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12_Touch/Driver/Touch.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -265,14 +299,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
           <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/12_Touch/Driver/Touch.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="160" column="17" lean-forward="true" selection-start-line="160" selection-start-column="17" selection-end-line="160" selection-end-column="17" />
+        <state relative-caret-position="109">
+          <caret line="147" column="27" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_USB_DEV/Test/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13_USB_DEV/Driver/USB_Mouse.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="47" column="16" lean-forward="false" selection-start-line="47" selection-start-column="16" selection-end-line="47" selection-end-column="16" />
           <folding />
         </state>
       </provider>

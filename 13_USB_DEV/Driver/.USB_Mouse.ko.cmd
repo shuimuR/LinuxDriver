@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/13_USB_DEV/Driver/USB_Mouse.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/13_USB_DEV/Driver/USB_Mouse.ko /home/shuimu/more/LinuxDriver/13_USB_DEV/Driver/USB_Mouse.o /home/shuimu/more/LinuxDriver/13_USB_DEV/Driver/USB_Mouse.mod.o

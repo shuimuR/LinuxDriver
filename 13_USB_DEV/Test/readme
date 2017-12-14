@@ -1,0 +1,45 @@
+测试：
+1. make menuconfig  去掉原来的USB鼠标驱动
+    device drivers
+        HID device
+            USB Human interface device
+
+2. make uImage并使用新的内核启动
+nfs 30000000 136.17.69.30:/home/shuimu/more/LinuxDriver/uImage_NoHID
+bootm 30000000
+
+3. 挂载nfs文件目录
+    mount -o nolock,vers=2 136.17.69.30:/home/shuimu/more/LinuxDriver /mnt
+
+4. 加载驱动
+    insmod *.ko
+
+5. 在开发板上接入拔出USB 鼠标
+
+
+/************************************************
+测试3
+************************************************/
+1. insmod
+2. ls /dev/ev*
+3. 接上USB鼠标
+4. 移动或按下鼠标
+
+
+/************************************************
+测试4
+************************************************/
+1. insmod
+2. ls /dev/ev*
+3. cat /dev/tty1
+    按键
+
+4. hexdump /dev/event*
+    最后一个event
+
+注意： 做此实验时，要将QT 关闭，不能启动
+
+
+
+
+
