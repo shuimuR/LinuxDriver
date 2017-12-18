@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/15_NAND/Driver/NAND.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/15_NAND/Driver/NAND.ko /home/shuimu/more/LinuxDriver/15_NAND/Driver/NAND.o /home/shuimu/more/LinuxDriver/15_NAND/Driver/NAND.mod.o

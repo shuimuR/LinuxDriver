@@ -1,0 +1,26 @@
+/************************************************************
+测试02
+在linux启动后，直接加载NAND.ko
+如果能正确识别NAND并输出信息，则认为成功
+************************************************************/
+
+/***********************************************************
+测试03
+1. make menuconfig
+    去掉内核自带的nand驱动
+    Device Drivers
+        Memory Technology Device(MTD) support
+            NAND Device Support
+                NAND flash support for s3c2410
+
+2. make uImage
+
+3. 使用新内核启动，并且使用nfs文件系统启动
+    保存之前的启动参数
+    set bootargs console=ttySAC0 root=/dev/nfs nfsroot=136.17.69.30:/home/shuimu/more/LinuxDriver/nfs_fs ip=136.17.69.240:136.17.69.30:136.17.69.1:255.255.255.0::eth0:off
+    save
+    nfs 30000000 136.17.69.30:/home/shuimu/more/LinuxDriver/uImage_NoNAND
+    bootm 30000000
+
+4. insmod *.ko
+
