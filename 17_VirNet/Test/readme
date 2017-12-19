@@ -1,0 +1,8 @@
+测试一
+
+1. insmod *.ko
+2. ifconfig vnet0 3.3.3.3
+    ifconfig
+    ping 3.3.3.3        成功
+    ping 3.3.3.4        成功
+

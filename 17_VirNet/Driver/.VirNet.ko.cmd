@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/17_VirNet/Driver/VirNet.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/17_VirNet/Driver/VirNet.ko /home/shuimu/more/LinuxDriver/17_VirNet/Driver/VirNet.o /home/shuimu/more/LinuxDriver/17_VirNet/Driver/VirNet.mod.o
