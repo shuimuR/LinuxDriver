@@ -1,0 +1,30 @@
+uboot从nand flash启动
+1. 配置内核支持nor
+    make menuconfig
+    Device drivers
+        Memory Technology Device(MTD) support
+            Mapping drivers for chip access
+            <M> CFI Flash device in physical memory map                      │ │
+              │ │    (0x0) Physical start address of flash mapping                    │ │
+              │ │    (0x1000000) Physical length of flash mapping                     │ │
+              │ │    (2)   Bank width in octets (NEW)
+
+
+2. make menuconfig
+
+3. make modules
+
+4.nfs 30000000 136.17.69.30:/home/shuimu/more/LinuxDriver/uImage_NoNAND
+      bootm 30000000
+
+
+5.  ls /dev/mtd*
+    insmod physmap.ko
+    ls /dev/mtd*
+
+/*********************************************
+测试自己写的驱动程序
+*********************************************/
+1. rmmod 之前的驱动
+2. 重新加载自己的驱动
+

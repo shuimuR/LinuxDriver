@@ -12,8 +12,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d4be339-47e4-4221-b81e-7489d35048be" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ramblock.bin" afterPath="$PROJECT_DIR$/ramblock.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ranblock.bin" afterPath="$PROJECT_DIR$/ranblock.bin" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/16_NOR/Driver/Nor.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/16_NOR/readme" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/buttontest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/fifthdrvtest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/firstdrvtest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/forthdrvtest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/hello" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/hello.c" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/ledtest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/seconddrvtest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/signal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/sixthdrvtest" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/test.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/testdrv_test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/nfs_fs/thirddrvtest" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -26,21 +39,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="NAND.c" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NAND.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/15_NAND/Driver/NAND.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="157" column="12" lean-forward="false" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
+            <state relative-caret-position="396">
+              <caret line="73" column="2" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="73" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Readme" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/15_NAND/Test/Readme">
+      <file leaf-file-name="readme" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/16_NOR/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="504">
+              <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Nor.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/16_NOR/Driver/Nor.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="347">
+              <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -73,6 +96,8 @@
         <option value="$PROJECT_DIR$/14_RAMBlock/Driver/readme" />
         <option value="$PROJECT_DIR$/15_NAND/Test/Readme" />
         <option value="$PROJECT_DIR$/15_NAND/Driver/NAND.c" />
+        <option value="$PROJECT_DIR$/16_NOR/Driver/Nor.c" />
+        <option value="$PROJECT_DIR$/16_NOR/readme" />
       </list>
     </option>
   </component>
@@ -83,11 +108,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="820" />
-    <option name="y" value="63" />
-    <option name="width" value="1139" />
-    <option name="height" value="1060" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1114" />
+    <option name="y" value="56" />
+    <option name="width" value="1137" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -139,7 +164,18 @@
               <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
               <item name="15_NAND" type="462c0819:PsiDirectoryNode" />
+              <item name="Driver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
+              <item name="15_NAND" type="462c0819:PsiDirectoryNode" />
               <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
+              <item name="16_NOR" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -192,25 +228,26 @@
       <workItem from="1513144478404" duration="7879000" />
       <workItem from="1513211733625" duration="1847000" />
       <workItem from="1513228891796" duration="8498000" />
-      <workItem from="1513558664547" duration="9342000" />
+      <workItem from="1513558664547" duration="10021000" />
+      <workItem from="1513654014304" duration="5213000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52401000" />
+    <option name="totallyTimeSpent" value="58293000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="1114" y="56" width="1137" height="1024" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1541779" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25153914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35174745" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -242,6 +279,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/15_NAND/Driver/NAND.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15_NAND/Test/Readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/14_RAMBlock/Driver/Block.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1134">
@@ -254,7 +307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -262,7 +314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -270,7 +321,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -285,7 +335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="738">
           <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -300,7 +349,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="666">
           <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -378,7 +426,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -386,7 +433,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -394,7 +440,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -408,16 +453,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/15_NAND/Test/Readme">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/15_NAND/Driver/NAND.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="157" column="12" lean-forward="false" selection-start-line="157" selection-start-column="12" selection-end-line="157" selection-end-column="12" />
+        <state relative-caret-position="396">
+          <caret line="73" column="2" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="73" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16_NOR/Driver/Nor.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16_NOR/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding />
         </state>
       </provider>
