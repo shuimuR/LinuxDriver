@@ -1,0 +1,14 @@
+1. 将修改后的驱动文件替换原来内核中的网卡驱动文件
+    /drivers/net
+
+2. 打开文件再保存关闭，使makefile认为修改过
+
+3. 更改makefile文件
+
+4. make uImage
+
+5. 使用新内核启动
+nfs 30000000 136.17.69.30:/home/shuimu/more/LinuxDriver/uImage_NewDM9000
+         bootm 30000000
+
+6. 如果能成功挂载nfs文件系统，则证明成功

@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/18_DM9000/Driver/dm9dev9000c.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/18_DM9000/Driver/dm9dev9000c.ko /home/shuimu/more/LinuxDriver/18_DM9000/Driver/dm9dev9000c.o /home/shuimu/more/LinuxDriver/18_DM9000/Driver/dm9dev9000c.mod.o

@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d4be339-47e4-4221-b81e-7489d35048be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/17_VirNet/Test/readme" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/18_DM9000/Test/readme" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -25,12 +25,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="VirNet.c" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/17_VirNet/Driver/VirNet.c">
+      <file leaf-file-name="dm9dev9000c.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/18_DM9000/Driver/dm9dev9000c.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="112" column="11" lean-forward="false" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="1691" column="1" lean-forward="true" selection-start-line="1691" selection-start-column="1" selection-end-line="1691" selection-end-column="1" />
+              <folding>
+                <marker date="1513748192000" expanded="true" signature="13599:14644" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="13712:13831" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="14646:14675" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="14719:17690" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="15380:15415" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="15522:15593" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="17692:17722" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="17776:20050" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="18952:19033" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="19057:19072" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="19380:19747" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="20052:20135" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="20208:22618" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="20357:20391" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="21944:22409" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="22620:22694" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="22740:23533" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="23209:23512" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="23582:24089" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="24091:24189" ph="/.../" />
+                <marker date="1513748192000" expanded="false" signature="24237:24308" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="24365:24443" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="24547:26086" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="26088:26123" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="26196:26302" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="26303:26346" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="26417:26902" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="26903:26949" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="27027:27717" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="27151:27219" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="27541:27591" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="27829:28448" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="28034:28263" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="28498:29041" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="29042:29074" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="29118:29462" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="29465:29514" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="29571:34101" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="30081:30247" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="33059:33160" ph="..." />
+                <marker date="1513748192000" expanded="false" signature="33351:33899" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="34103:34137" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="34194:34402" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="34404:34447" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="34502:35943" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="35945:36118" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="36197:36283" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="36356:36438" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="36522:36603" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="36605:36639" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="36674:36728" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="36730:36763" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="36810:36865" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="36867:36900" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="36948:37327" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="37329:37361" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="37422:37827" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="37965:38158" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="38237:38388" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="38467:38634" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="38635:38663" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="38713:38794" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="38796:38826" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="38878:38964" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="38965:39002" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="39060:39131" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="39132:39169" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="39227:39278" ph="{...}" />
+                <marker date="1513748192000" expanded="true" signature="39279:39322" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="39390:39647" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="39409:39571" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="39648:39691" ph="/.../" />
+                <marker date="1513748192000" expanded="true" signature="39759:39943" ph="{...}" />
+                <marker date="1513748192000" expanded="false" signature="39778:39866" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="40062:40423" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="40577:40649" ph="..." />
+                <marker date="1513748192000" expanded="true" signature="40938:41056" ph="/.../" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -38,8 +116,18 @@
       <file leaf-file-name="readme" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/17_VirNet/Test/readme">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="108">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/18_DM9000/Test/readme">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="72" />
               <folding />
             </state>
           </provider>
@@ -52,6 +140,9 @@
       <find>map</find>
       <find>ex</find>
       <find>usb_alloc_coherent</find>
+      <find>dmfe_probe</find>
+      <find>Init</find>
+      <find>Open</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -76,6 +167,8 @@
         <option value="$PROJECT_DIR$/16_NOR/readme" />
         <option value="$PROJECT_DIR$/17_VirNet/Test/readme" />
         <option value="$PROJECT_DIR$/17_VirNet/Driver/VirNet.c" />
+        <option value="$PROJECT_DIR$/18_DM9000/Driver/dm9dev9000c.c" />
+        <option value="$PROJECT_DIR$/18_DM9000/Test/readme" />
       </list>
     </option>
   </component>
@@ -86,8 +179,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="866" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="749" />
     <option name="y" value="56" />
     <option name="width" value="1137" />
     <option name="height" value="1024" />
@@ -160,6 +253,17 @@
               <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
               <item name="17_VirNet" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
+              <item name="18_DM9000" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinuxDriver" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="LinuxDriver" type="462c0819:PsiDirectoryNode" />
+              <item name="18_DM9000" type="462c0819:PsiDirectoryNode" />
+              <item name="Test" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,7 +272,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/10th_lcd/4th_4.3/lcd.c" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/10th_lcd/4th_4.3/lcd.c" />
   </component>
@@ -213,26 +317,26 @@
       <workItem from="1513228891796" duration="8498000" />
       <workItem from="1513558664547" duration="10021000" />
       <workItem from="1513654014304" duration="10375000" />
+      <workItem from="1513731594778" duration="5264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63455000" />
+    <option name="totallyTimeSpent" value="68719000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="866" y="56" width="1137" height="1024" extended-state="1" />
-    <editor active="true" />
+    <frame x="749" y="56" width="1137" height="1024" extended-state="0" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25153914" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35174745" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35174745" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -257,12 +361,12 @@
           <line>34</line>
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/15_NAND/Driver/NAND.c">
+    <entry file="file://$PROJECT_DIR$/17_VirNet/Driver/VirNet.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -270,11 +374,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/17_VirNet/Test/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/15_NAND/Driver/NAND.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/15_NAND/Test/Readme">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="4" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -438,15 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="22" column="15" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/16_NOR/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -454,7 +563,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
           <caret line="73" column="2" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="73" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -462,15 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="71" column="30" lean-forward="false" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17_VirNet/Test/readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -478,6 +577,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
           <caret line="112" column="11" lean-forward="false" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/16_NOR/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17_VirNet/Test/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/18_DM9000/Driver/dm9dev9000c.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="1691" column="1" lean-forward="true" selection-start-line="1691" selection-start-column="1" selection-end-line="1691" selection-end-column="1" />
+          <folding>
+            <marker date="1513748192000" expanded="true" signature="13599:14644" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="13712:13831" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="14646:14675" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="14719:17690" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="15380:15415" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="15522:15593" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="17692:17722" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="17776:20050" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="18952:19033" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="19057:19072" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="19380:19747" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="20052:20135" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="20208:22618" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="20357:20391" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="21944:22409" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="22620:22694" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="22740:23533" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="23209:23512" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="23582:24089" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="24091:24189" ph="/.../" />
+            <marker date="1513748192000" expanded="false" signature="24237:24308" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="24365:24443" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="24547:26086" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="26088:26123" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="26196:26302" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="26303:26346" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="26417:26902" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="26903:26949" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="27027:27717" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="27151:27219" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="27541:27591" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="27829:28448" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="28034:28263" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="28498:29041" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="29042:29074" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="29118:29462" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="29465:29514" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="29571:34101" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="30081:30247" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="33059:33160" ph="..." />
+            <marker date="1513748192000" expanded="false" signature="33351:33899" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="34103:34137" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="34194:34402" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="34404:34447" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="34502:35943" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="35945:36118" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="36197:36283" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="36356:36438" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="36522:36603" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="36605:36639" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="36674:36728" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="36730:36763" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="36810:36865" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="36867:36900" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="36948:37327" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="37329:37361" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="37422:37827" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="37965:38158" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="38237:38388" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="38467:38634" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="38635:38663" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="38713:38794" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="38796:38826" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="38878:38964" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="38965:39002" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="39060:39131" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="39132:39169" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="39227:39278" ph="{...}" />
+            <marker date="1513748192000" expanded="true" signature="39279:39322" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="39390:39647" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="39409:39571" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="39648:39691" ph="/.../" />
+            <marker date="1513748192000" expanded="true" signature="39759:39943" ph="{...}" />
+            <marker date="1513748192000" expanded="false" signature="39778:39866" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="40062:40423" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="40577:40649" ph="..." />
+            <marker date="1513748192000" expanded="true" signature="40938:41056" ph="/.../" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/18_DM9000/Test/readme">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="72" />
           <folding />
         </state>
       </provider>
