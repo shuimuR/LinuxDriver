@@ -1,0 +1,10 @@
+测试1.
+1. insmod *.ko
+    观察输出信息
+
+2. 修改地址为其他值
+    观察输出信息
+
+    mount -o nolock,vers=2 136.17.69.30:/home/shuimu/more/LinuxDriver /mnt
+
+3.
