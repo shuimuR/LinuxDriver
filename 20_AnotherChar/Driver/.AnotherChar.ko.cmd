@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/20_AnotherChar/Driver/AnotherChar.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/20_AnotherChar/Driver/AnotherChar.ko /home/shuimu/more/LinuxDriver/20_AnotherChar/Driver/AnotherChar.o /home/shuimu/more/LinuxDriver/20_AnotherChar/Driver/AnotherChar.mod.o
