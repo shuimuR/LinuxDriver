@@ -1,0 +1,18 @@
+1. 在APP目录中解压文件
+
+2. 在app目录下创建文件夹tmp
+
+3. 编译libid3tag-0.15.1b
+    cd libid3tag-0.15.1b
+    ./configure --host=arm-linux --prefix=/home/shuimu/more/LinuxDriver/23_Player/app/tmp/
+    make
+    make install
+
+4. 编译libmad-0.15.1b
+       cd libid3tag-0.15.1b
+       ./configure --host=arm-linux --prefix=/home/shuimu/more/LinuxDriver/23_Player/app/tmp/
+       make
+       make install
+
+5. 编译madplayer
+    

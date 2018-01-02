@@ -1,0 +1,32 @@
+测试WM8976
+
+1. 确定内核里已e
+    经配置好了sound/soc/s3c24xx/s3c2410-***
+    device drivers
+        Sound
+             Advanced Linux Sound Architectur
+                System on Chip audio support
+                    I2S of the Samsung S3C24XX chips
+
+2.拷贝改好的源文件到以下目录
+    修改sound/soc/s3c24xx/Makefile/
+
+3. make uImage
+
+
+4. 使用新内核启动
+    nfs 30000000 136.17.69.30:/home/shuimu/more/LinuxDriver/uImage_Sound
+        bootm 30000000
+
+5. ls /dev/dsp /dev/mixer
+
+6. 播放
+    寻找*.wav格式的文件，放在根文件系统下
+    cat *.wav > /dev/dsp
+
+7. 录音
+    cat /dev/dsp > sound.bin
+    说话
+    Ctrl + C
+    cat sound.bin > /dev/dsp
+

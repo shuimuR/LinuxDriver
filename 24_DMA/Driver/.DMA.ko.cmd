@@ -1,0 +1,1 @@
+cmd_/home/shuimu/more/LinuxDriver/24_DMA/Driver/DMA.ko := arm-linux-ld -EL  -r -o /home/shuimu/more/LinuxDriver/24_DMA/Driver/DMA.ko /home/shuimu/more/LinuxDriver/24_DMA/Driver/DMA.o /home/shuimu/more/LinuxDriver/24_DMA/Driver/DMA.mod.o

@@ -1,0 +1,27 @@
+修改common-smdk.c
+static struct platform_device __initdata *smdk_devs[] = {
+	&s3c_device_nand,
+	&smdk_led4,
+	&smdk_led5,
+	&smdk_led6,
+	&smdk_led7,
+	&s3c_device_rtc,
+
+加上了&s3c_device_rtc,
+
+编译
+
+使用新内核启动
+    nfs 30000000 136.17.69.30:/home/shuimu/more/LinuxDriver/uImage_RTC
+    bootm 30000000
+
+查看文件
+    ls /dev/rtc*
+
+使用命令
+    date
+
+    date 122714592017.40        //修改时间
+
+    写入RTC
+    hwclock -w
