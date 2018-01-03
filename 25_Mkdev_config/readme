@@ -1,0 +1,41 @@
+/********************************************************
+本节测试程序为20_AnotherChar/Driver
+
+1. 创建文件/etc/mdev.conf
+
+Hello?[0123]? 0:0 777 * if [ $ACTION = "add" ]; then echo create /dev/$MDEV > /dev/console; else echo remove /dev/$MDEV > /dev/console; fi
+
+2. 在/dev下创建脚本  Hello.sh
+    #!/bin/sh
+    if [ $ACTION = "add" ];
+    then
+    	echo create /dev/$MDEV > /dev/console;
+    else
+    	echo remove /dev/$MDEV > /dev/console;
+    fi
+
+3.  chmod +x Hello.sh
+
+4. 修改/etc/mdev.conf
+    Hello?[0123]? 0:0 777 * /etc/add_remove_led.sh
+    注意: 此处调用脚本须写出绝对路径
+
+5. 实现U盘自动挂载
+    修改mdev.conf
+
+    sda[1-9]+ 0:0 777 * if [ $ACTION = "add" ]; then mount /dev/$MDEV /mnt; else umount /mnt; fi
+    注意：
+        在拔出U盘前，要退出mnt目录，比如切换当前目录到/
+
+6. 使用脚本
+    sda[1-9]+ 0:0 777 * /etc/mount.sh
+
+    mount.sh
+    #!/bin/sh
+    if [ $ACTION = "add" ];
+    then
+        mount /dev/$MDEV /mnt;
+    else
+        umount /mnt;
+    fi
+   
