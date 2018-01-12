@@ -1,0 +1,16 @@
+1. gdb调试，可以使用eclipse作为前端，实现源码级的调试
+    core dump
+
+2. 配置内核
+    Kernel hacking
+        Verbose user fault message
+
+    设置uboot参数
+    set bootargs 之前的参数 + user_debug=0xff
+
+    执行程序会打印出寄存器信息
+
+3.  利用自己写的printk函数，在App执行时，使用文件记录其运行轨迹
+    如果发现问题，再按照记录的数据，重放运行轨迹，查找问题
+
+    

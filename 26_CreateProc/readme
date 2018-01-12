@@ -1,0 +1,21 @@
+1. 使用printk打印消息
+    //打开关闭调试
+    #if 1
+    #define DBG_PRINTK  printk
+    #else
+    #define DBG_PRINTK(x, ...)
+    #endif
+    DBG_PRINTK("%s %s %d\n", __FILE__, __FUNCTION__, __LINE__);
+
+    //加打印级别
+    printk(KERN_DEBUG"%s %s %d\n", __FILE__, __FUNCTION__, __LINE__);
+
+    打印级别的参数存放在/proc/sys/kernel/printk文件中
+    调整打印级别
+    echo “8 4 1 7”>/proc/sys/kernel/printk
+
+    另外在设置uboot启动参数时加入debug，则会打出所有信息，调试完成后去掉此参数即可
+
+    在uboot中设置loglevel=*,可以设置需要打印的debug信息级别
+
+    

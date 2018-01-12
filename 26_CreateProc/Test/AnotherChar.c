@@ -12,6 +12,8 @@
 #include <linux/poll.h>
 #include <linux/cdev.h>
 
+extern int MyPrintk(const char *fmt, ...);
+
 
 static int major;
 
@@ -49,6 +51,8 @@ static struct class_device *HelloDev;
 
 static int HelloInit(void)
 {
+    MyPrintk("HelloInit\n");
+
     dev_t devid;
 
     //只关联次设备号为0,1的两个节点
@@ -87,6 +91,7 @@ static int HelloInit(void)
 
 static void HelloExit(void)
 {
+    MyPrintk("HelloExit\n");
     class_device_destroy(HelloClass, MKDEV(major, 0));
     class_device_destroy(HelloClass, MKDEV(major, 1));
     class_device_destroy(HelloClass, MKDEV(major, 2));

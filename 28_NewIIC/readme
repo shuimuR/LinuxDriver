@@ -1,0 +1,108 @@
+新内核的IIC 实现方式和2.6内核实现不一致
+添加新的设备可以通过以下几个方式
+1. 适用于在内核初始化之前就已经知晓的设备
+    1.1 定义i2c_board_info结构体
+        有3个设备
+    static struct i2c_board_info __initdata h4_i2c_board_info[] = {
+        {
+            I2C_BOARD_INFO("isp1301_omap", 0x2d),
+            .irq		= OMAP_GPIO_IRQ(125),
+        },
+        {	/* EEPROM on mainboard */
+            I2C_BOARD_INFO("24c01", 0x52),
+            .platform_data	= &m24c01,
+        },
+        {	/* EEPROM on cpu card */
+            I2C_BOARD_INFO("24c01", 0x57),
+            .platform_data	= &m24c01,
+        },
+    };
+
+    在初始化函数中注册，全部挂载在IIC 1上
+    static void __init omap_h4_init(void)
+    {
+        (...)
+        i2c_register_board_info(1, h4_i2c_board_info,
+                ARRAY_SIZE(h4_i2c_board_info));
+        (...)
+    }
+
+2. 动态加载
+    2.1 i2c_new_device
+    static struct i2c_client *DS948_Client;
+    static struct i2c_board_info DS948_info = {
+       I2C_BOARD_INFO("DS948", 0x2C),
+    };
+    DS948_Client = i2c_new_device(i2c_adapter, &DS948_info);
+
+    i2c_new_device强制认为设备存在，不论它是否真的存在
+
+    2.2 i2c_new_probed_device
+     可以识别出的设备
+     struct i2c_board_info i2c_info;
+
+     memset(&i2c_info, 0, sizeof(struct i2c_board_info));
+     strlcpy(i2c_info.type, "DS948", I2C_NAME_SIZE);
+
+     struct i2c_adapter *i2c_adapter;
+     i2c_adapter = i2c_get_adapter(0);
+     DS948_Client = i2c_new_probed_device(i2c_adapter, &i2c_info,
+                            normal_i2c, NULL);
+     i2c_put_adapter(i2c_adapter);
+
+3. 从用户空间创建设备
+    创建设备
+    echo DevName DevAddr > /sys/devices/platform/s3c2440-i2c.0/i2c-0/new_device
+    删除设备
+    echo DevAddr > /sys/devices/platform/s3c2440-i2c.0/i2c-0/delete_device
+
+    前提是在内核中已经存在drv驱动，可以根据名称调用probe函数
+
+4. 前面的3中方法都要事先确定IIC适配器，如果事先并不知道挂载在哪个适配器，则用此种方法
+    static struct i2c_driver DS948_Drv =
+    {
+        .class  = I2C_CLASS_HWMON, /* 表示去哪些适配器上找设备 */
+        .driver =
+        {
+            .name = "DS948",
+            .owner = THIS_MODULE,
+        },
+        .probe = DS948_Probe,
+        .remove = DS948_Remove,
+        .id_table = DS948_id_table,
+        .detect     = DS948_Detect,  /* 用这个函数来检测设备确实存在 */
+        .address_list	= addr_list,   /* 这些设备的地址 */
+    };
+
+    static const struct i2c_device_id DS948_id_table[] = {
+    	{ "DS948", 0 },
+    	{}
+    };
+
+    static const unsigned short addr_list[] = { 0x60, 0x2C, I2C_CLIENT_END };
+
+    static int DS948_Drv_Init(void)
+    {
+    	i2c_add_driver(&DS948_Drv);
+    }
+
+    static void DS948_Drv_Exit(void)
+    {
+        i2c_del_driver(&DS948_Drv);
+    }
+
+/************************************************************
+应用程序直接调用IIC接口操作IIC设备
+不依赖底层驱动的读写函数，直接用地址访问IIC设备
+************************************************************/
+使用方法参考Linux内核目录的documents目录下
+linux-3.0.86/Documentation/i2c/dev-interface
+i2c_tool可以在网上直接下载,相当于封装过的IIC内核接口函数
+注意：
+    如果对应的设备地址已经注册有对应的驱动程序，则不能用这种方法。
+
+ls /sys/class/i2c-dev/ -al 查看内核中注册的IIC通道
+
+1. 直接编写应用程序，在应用程序中
+    fd = open("/dev/i2c/0", O_RDWR);
+    ioctl(fd, I2C_SLAVE, Addr_948)

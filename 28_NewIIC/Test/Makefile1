@@ -1,0 +1,13 @@
+OBJS=DS90UB948_Test.o TestPattern.o
+DS90UB948_Test:$(OBJS)
+	arm-linux-gcc -o DS90UB948_Test $(OBJS)
+
+DS90UB948_Test.o:DS90UB948_Test.c TestPattern.h
+	arm-linux-gcc -c DS90UB948_Test.c
+TestPattern.o:TestPattern.c TestPattern.h
+	arm-linux-gcc -c TestPattern.c
+.PHONY:clean
+
+clean:
+	rm DS90UB948_Test $(OBJS)
+

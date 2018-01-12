@@ -1,0 +1,16 @@
+/*****************************************************
+测试方法
+*****************************************************/
+1. insmod RegEditor.ko
+
+2. insmod FirstDrv.ko
+
+3. ./RegEditorTest r32 0x56000054
+
+4. ./FirstDrvTest on
+
+5. ./RegEditorTest r32 0x56000054
+
+6. ./RegEditorTest w32 0x56000054 0x05
+
+7. ./RegEditorTest w32 0x56000054 0x7D

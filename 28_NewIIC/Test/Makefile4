@@ -1,0 +1,16 @@
+OBJS=DS90UB948_Test.o TestPattern.o
+VPATH = ./include
+CC = arm-linux-gcc
+CFLAGS = 
+
+DS90UB948_Test:$(OBJS)
+	arm-linux-gcc -o DS90UB948_Test $(OBJS) 
+
+$(OBJS) : %.o : %.c
+	$(CC) -c $(CFLAGS) $< -o $@ -I ./include
+
+.PHONY:clean
+
+clean:
+	-rm DS90UB948_Test $(OBJS)
+

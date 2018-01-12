@@ -1,0 +1,51 @@
+1. 使用printk打印消息
+    //打开关闭调试
+    #if 1
+    #define DBG_PRINTK  printk
+    #else
+    #define DBG_PRINTK(x, ...)
+    #endif
+    DBG_PRINTK("%s %s %d\n", __FILE__, __FUNCTION__, __LINE__);
+
+    //加打印级别
+    printk(KERN_DEBUG"%s %s %d\n", __FILE__, __FUNCTION__, __LINE__);
+
+    打印级别的参数存放在/proc/sys/kernel/printk文件中
+    调整打印级别
+    echo “8 4 1 7”>/proc/sys/kernel/printk
+
+    另外在设置uboot启动参数时加入debug，则会打出所有信息，调试完成后去掉此参数即可
+
+    在uboot中设置loglevel=*,可以设置需要打印的debug信息级别
+
+2. linux系统启动分析
+
+    在/etc/init.d/rcS里面有命令 mount -a
+    它的意思是将/etc/fstab 文件中的目录挂载
+
+    系统的调试信息在/proc/kmsg
+    里面有所有的调试信息，前面有打印级别
+
+    可以使用dmesg命令查看之前的打印信息
+
+3. 栈分析
+
+    调试内核时，或者发生错误时打印回溯信息
+    make menuconfig
+        Kernel hacking
+            kernel debugging
+
+    查看内核和加载程序的地址
+    cat /proc/kallsyms
+    出错后内核会给出PC值，通过上面的信息可以推断出错的函数位置
+
+    在找对对应的驱动模块后，在宿主机上反汇编
+    arm-linux-objdump -D *.ko > *.dis
+
+4. 自己制作寄存器读写工具调试代码
+
+5. 在timerbase的中断函数中打印出当前进程的PID 和 PC 值，找出出错的地址
+    PC - 4是问题出现的地方
+    此方法可用于系统莫名死机的解决方法
+
+    
